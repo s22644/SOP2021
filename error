@@ -1,0 +1,5 @@
+ls: invalid option -- 'y'
+Try 'ls --help' for more information.
+ls: invalid option -- 'y'
+Try 'ls --help' for more information.
+cat: /etc/shadow: Permission denied

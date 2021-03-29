@@ -1,0 +1,10 @@
+5
+REGEXP2.sh
+regexp2.txt
+REGEXP3.sh
+REGEXP.sh
+zad1.sh
+zad2.sh
+zad3.sh
+zad4.sh
+zad4.txt

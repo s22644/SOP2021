@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int main(void)
+{
+	double a, b;
+
+	char znakDzialania;
+
+	printf("Podaj a: ");
+	scanf("%lf", &a);
+
+	printf("Podaj b: ");
+	scanf("%lf", &b);
+
+	fflush(stdin);
+
+	printf("Podaj znak dzialania: ");
+	scanf("%c", &znakDzialania);
+
+	switch(znakDzialania)
+	{
+		case '+':
+		{
+			printf("%.2lf + %.2lf = %.2lf\n", a, b, a + b);
+
+			break;
+		}
+
+		case '-':
+		{
+			printf("%.2lf - %.2lf = %.2lf\n", a, b, a - b);
+
+			break;
+		}
+		case '*':
+		{
+			printf("%.2lf * %.2lf = %.2lf\n", a, b, a * b);
+
+			break;
+		}
+
+		case '/':
+		{
+			if(b == 0)
+			{
+				printf("Nie dziel cholero przez zero!");
+			}
+			else
+			{
+				printf("%.2lf / %.2lf = %.2lf\n", a, b, a / b);
+			}
+
+			break;
+		}
+		default:
+		{
+			printf("Nieprawidlowy znak dzialania!\n");
+
+			getchar();
+
+			return 1;
+		}
+
+	}
+
+	getchar();
+
+	return 0;
+}

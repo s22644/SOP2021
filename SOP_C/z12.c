@@ -3,16 +3,17 @@
 
 int main()
 {
-	int a, b, z;
+	int a, b;
+    char z;
 
-	printf("Podaj a: ");
-	scanf("%d", &a);
+    printf("Podaj a: ");
+    scanf("%d", &a);
 
-	printf("Podaj b: ");
-	scanf("%d", &b);
+    printf("Podaj b: ");
+    scanf("%d", &b);
 
-	printf("Podaj znak dzialania: ");
-	scanf("%d", &z);
+    printf("Podaj znak dzialania: ");
+    scanf(" %c", &z);
 
 switch(z){
 case '+':

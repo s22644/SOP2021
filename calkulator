@@ -1,26 +1,11 @@
-int calculate(const char* expr, float *result)
-{
-    char* end;
-    const char* sign = NULL;
-    float v;
-    float res = 0;
-     
-    while(v = strtof(expr, &end), errno == 0) {
-        expr = end;
-        if(sign) {
-            switch (*sign) {
-                case '+': res += v; break;
-                case '-': res -= v; break;
-                case '/': res /= v; break;
-                case '*': res *= v; break;
-            }
-        }
-        else res = v;
- 
-        sign = strpbrk(expr, "/*+-"); 
-        if(sign) expr = sign + 1;
-        else break;
-    }
-     
-    *result = res;
-}
+int a, b;
+    char z;
+
+    printf("Podaj a: ");
+    scanf("%d", &a);
+
+    printf("Podaj b: ");
+    scanf("%d", &b);
+
+    printf("Podaj znak dzialania: ");
+    scanf(" %c", &z);
